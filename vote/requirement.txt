@@ -1,2 +1,2 @@
-flask
-redis
+flask      # web framework
+redis      # redis client
