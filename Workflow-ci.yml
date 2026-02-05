@@ -1,0 +1,26 @@
+name: Docker CI
+
+# Run pipeline whenever code pushed
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      # Clone repo
+      - uses: actions/checkout@v4
+
+      # Build all containers
+      - name: Build images
+        run: docker compose build
+
+      # Start services
+      - name: Start containers
+        run: docker compose up -d
+
+      # Verify containers running
+      - name: Show running containers
+        run: docker ps
