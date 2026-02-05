@@ -27,12 +27,6 @@ docker tag votingapp votingacr123.azurecr.io/votingapp:v1
 ### 6. Push to ACR
 docker push votingacr123.azurecr.io/votingapp:v1
 
-
-Now you can say:
-👉 *“I manually provisioned Azure infra and pushed containers to ACR.”*
-
-Very strong.
-
 ---
 
 # ✅ Step 2 — Add Azure Pipeline YAML & ✅ Step 3 — Add ACR Push Script
