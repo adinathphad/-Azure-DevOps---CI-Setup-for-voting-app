@@ -108,6 +108,19 @@ docker compose down
 
 ---
 
+## Azure Deployment (Manual)
+
+This project was also tested with Azure DevOps:
+
+- Created Resource Group
+- Created Azure Container Registry (ACR)
+- Built Docker images
+- Pushed images to ACR
+- Used Azure DevOps pipeline
+
+Commands available in /azure folder.
+
+
 ## 🎯 Concepts Covered
 
 - Microservices architecture
