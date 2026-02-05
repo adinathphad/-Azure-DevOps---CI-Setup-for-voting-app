@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <!-- This creates console app -->
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+  </PropertyGroup>
+
+  <!-- Required libraries -->
+  <ItemGroup>
+    <PackageReference Include="StackExchange.Redis" Version="2.7.33"/>
+    <PackageReference Include="Npgsql" Version="8.0.2"/>
+  </ItemGroup>
+
+</Project>
