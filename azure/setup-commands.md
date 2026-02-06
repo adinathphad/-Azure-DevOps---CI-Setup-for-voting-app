@@ -7,7 +7,6 @@ This project was also deployed using Azure services manually.
 ### 1. Create Resource Group
 az group create \
   --name voting-rg \
-  --location centralindia
 
 ### 2. Create Azure Container Registry (ACR)
 az acr create \
