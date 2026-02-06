@@ -1,14 +1,3 @@
-# because of dotnet, we always build on amd64, and control target platforms via CLI
-# reason: .NET has limited and unstable support for cross-architecture emulation
-
-# dotnet doesn't support QEMU for building or running
-# QEMU is used by Docker to emulate other CPU architectures (like ARM on Intel)
-
-# errors are very common on arm/v7 (32-bit ARM)
-# examples: illegal instruction, segmentation fault, runtime crashes
-
-# ------------------------------------------------------------
-
 # build stage
 # --platform=${BUILDPLATFORM} ensures the build runs on the builder's native CPU
 # this avoids QEMU emulation issues with .NET
