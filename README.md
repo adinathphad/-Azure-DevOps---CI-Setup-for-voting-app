@@ -131,6 +131,5 @@ Commands available in /azure folder.
 - Azure DevOps pipelines
 - GitHub Actions automation
 
----
 
 
